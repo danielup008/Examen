@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/bg.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <title>EXAMEN</title>
+</head>
+<body>
+    <div class="area" >
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+    </div>
+    <!--Boton para empezar el examen -->
+    <div class="start_btn"><button>Empezar</button></div>
+    
+    <!-- Instrucciones del examen -->
+    <div class="info_box">
+        <div class="info_title">
+            <span>Reglas del examen</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. Solo tendrás <span>15 segundos</span> por cada pregunta.</div>
+            <div class="info">2. Una vez que selecciones tu respuesta, no puedes volver a seleccionarla.</div>
+            <div class="info">3. No puedes seleccionar ninguna opción una vez que el tiempo se haya agotado.</div>
+            <div class="info">4. No puedes salir del cuestionario mientras estás jugando.</div>
+            <div class="info">5. Obtendrás puntos en función de tus respuestas correctas.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Salir</button>
+            <button class="restart">Continuar</button>
+        </div>
+    </div>
+
+    <!-- Preguntas -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Examen</div>
+            <div class="timer">
+                <div class="time_text">Tiempo restante</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="question_text">
+                <!-- <span>¿insertar pregunta?</span> -->
+            </div>
+            <div class="option_list">
+                <!-- <div class="option">
+                    <span>primer inciso</span>
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="option">
+                    <span>segundo inciso</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>tercer inciso</span>
+                </div>
+                <div class="option">
+                    <span>cuarto inciso</span>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- quiz box footer -->
+        <footer>
+            <div class="total_question">
+                <!-- <span><p>2</p>de<p>5</p>Preguntas</span> -->
+            </div>
+            <button class="next_btn">Siguiente pregunta</button>
+        </footer>
+    </div>
+    <!-- Resultados -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Has terminado el examen</div>
+        <div class="score_text">
+            <!-- <span>Lo siento, obtuviste <p>2</p> de <p>5</p></span> -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Reintentar</button>
+            <button class="quit">Salir</button>
+        </div>
+    </div>
+    <!-- script -->
+     <script src="JS/script.js"></script>
+     <script src="JS/preguntas del examen.js"></script>
+</body>
+</html>
+
